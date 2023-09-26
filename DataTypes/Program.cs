@@ -1,4 +1,9 @@
-﻿using System;
+﻿//#define LOGICAL_TYPES
+//#define CHARACTER_TYPES
+//#define INTEGRAL_TYPES
+//#define FLOATING_TYPES
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,22 +17,26 @@ namespace DataTypes
 		static void Main(string[] args)
 		{
 			// Object
+#if LOGICAL_TYPES
 			Console.WriteLine("BOOL:");
 			Console.WriteLine($"sizeof(bool) - {sizeof(bool)}"); // Boolean
             Console.WriteLine($"true - {true}");
             Console.WriteLine($"true.GetType() - {true.GetType()}");
             Console.Write($"3 + 2.6 = {3 + 2.6} - {(3 + 2.6).GetType()}\n");
 
-            Console.WriteLine(delimeter);
-
-            Console.WriteLine("CHAR:");
+			Console.WriteLine(delimeter);
+#endif
+#if CHARACTER_TYPES
+			Console.WriteLine("CHAR:");
             Console.Write($"sizeof(char) - {sizeof(char)}\n");
 			Console.WriteLine($"MinValue: {(int)(char.MinValue)}");
 			Console.WriteLine($"MaxValue: {(int)(char.MaxValue)}");
 
             Console.WriteLine(delimeter);
 
-            Console.WriteLine("SHORT");
+#endif
+#if INTEGRAL_TYPES
+			Console.WriteLine("SHORT");
             Console.WriteLine($"sizeof(short) - {sizeof(short)}");
 			Console.WriteLine($"MinValue: {(short.MinValue)}");
 			Console.WriteLine($"MaxValue: {(short.MaxValue)}");
@@ -66,6 +75,30 @@ namespace DataTypes
 			Console.WriteLine($"sizeof(ulong) - {sizeof(ulong)}");
 			Console.WriteLine($"MinValue: {(ulong.MinValue)}");
 			Console.WriteLine($"MaxValue: {(ulong.MaxValue)}");
+
+			Console.WriteLine(delimeter);
+
+#endif
+#if FLOATING_TYPES
+			Console.WriteLine("FLOAT");
+			Console.WriteLine($"sizeof(float) - {sizeof(float)}");
+			Console.WriteLine($"MinValue: {(float.MinValue)}");
+			Console.WriteLine($"MaxValue: {(float.MaxValue)}");
+
+			Console.WriteLine(delimeter);
+
+			Console.WriteLine("DOUBLE");
+			Console.WriteLine($"sizeof(double) - {sizeof(double)}");
+			Console.WriteLine($"MinValue: {(double.MinValue)}");
+			Console.WriteLine($"MaxValue: {(double.MaxValue)}");
+
+			Console.WriteLine(delimeter);
+
+			Console.WriteLine("DECIMAL");
+			Console.WriteLine($"sizeof(decimal) - {sizeof(decimal)}");
+			Console.WriteLine($"MinValue: {(decimal.MinValue)}");
+			Console.WriteLine($"MaxValue: {(decimal.MaxValue)}");
+#endif
 
 		}
 	}
