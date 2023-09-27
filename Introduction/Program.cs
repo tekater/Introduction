@@ -1,4 +1,4 @@
-﻿//#define CONSOLE_SETTINGS
+//#define CONSOLE_SETTINGS
 //#define WALTER_WHITE_50
 using System;
 using System.Collections.Generic;
