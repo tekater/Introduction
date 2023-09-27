@@ -10,7 +10,7 @@ namespace HW
 	{
 		static void Main(string[] args)
 		{
-			/*//Task1
+			//Task1
 			{
 				Console.WriteLine($"Преобразование числа в денежный формат.\nВведите дробное число: ");
 				double money = Convert.ToDouble(Console.ReadLine());
@@ -51,7 +51,7 @@ namespace HW
 				int count1 = Convert.ToInt32(Console.ReadLine());
 
 				Console.WriteLine($"Стоимость покупки: {(cost1 + cost2) * count1} грн.");
-			}*/
+			}
 
 			//Task4
 			{
@@ -67,9 +67,15 @@ namespace HW
 				double cost = Convert.ToDouble(Console.ReadLine());
 
 				Console.Write($"Поездка на дачу обойдётся в:{ (int)((km / (consumption* 0.1))  * cost)} грн. ");
-				Console.Write($"{(int)((((km / (consumption * 0.1)) * cost) - (int)((km / (consumption * 0.1)) * cost)) * 100)} коп");
+				Console.Write($"{(int)((((km / (consumption * 0.1)) * cost) - (int)((km / (consumption * 0.1)) * cost)) * 100)} коn.\n");
 
 			}
+            Console.WriteLine("~Калькулятор");
+
+            Console.WriteLine("Введите ваше выражение: ");
+			string calc = Console.ReadLine();
+
+            Console.WriteLine();
         }
 	}
 }
