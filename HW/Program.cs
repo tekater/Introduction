@@ -70,7 +70,6 @@ namespace HW
 				Console.Write($"{(int)((((km / (consumption * 0.1)) * cost) - (int)((km / (consumption * 0.1)) * cost)) * 100)} коn.\n");
 
 			}
-
             Console.WriteLine("~Калькулятор");
 
             Console.WriteLine("Введите ваше выражение: ");
