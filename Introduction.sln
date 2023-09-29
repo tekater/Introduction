@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc", "Calc\Calc.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{2A24BC34-253B-495B-AADF-8B172329BA6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enumerations", "Enumerations\Enumerations.csproj", "{3A1F0E4D-3069-4CA3-9C6A-041AE19C8CF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransferParameters", "TransferParameters\TransferParameters.csproj", "{05DC885B-13E1-468F-A209-6A93EC97C398}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{2A24BC34-253B-495B-AADF-8B172329BA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A24BC34-253B-495B-AADF-8B172329BA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A24BC34-253B-495B-AADF-8B172329BA6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A1F0E4D-3069-4CA3-9C6A-041AE19C8CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A1F0E4D-3069-4CA3-9C6A-041AE19C8CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A1F0E4D-3069-4CA3-9C6A-041AE19C8CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A1F0E4D-3069-4CA3-9C6A-041AE19C8CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05DC885B-13E1-468F-A209-6A93EC97C398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DC885B-13E1-468F-A209-6A93EC97C398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DC885B-13E1-468F-A209-6A93EC97C398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DC885B-13E1-468F-A209-6A93EC97C398}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

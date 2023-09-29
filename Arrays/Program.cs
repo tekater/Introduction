@@ -116,15 +116,13 @@ namespace Arrays
 					new int[]{144,233,377,510}
 				};
 
-				for (int i = 0; i < j_arr.Length; i++)
-				{
-					for (int j = 0; j < j_arr[i].Length; j++)
-					{
-						Console.WriteLine($"{j_arr[i][j]} \t");
-					}
-					Console.WriteLine();
-				}
-				Console.WriteLine();
+				Print(j_arr);
+
+				Console.WriteLine($"Сумма всех элементов массива: {Sum(j_arr)}");
+				Console.WriteLine($"Среднее арифметическое: {Count(j_arr)}");
+				Console.WriteLine($"Min: {j_arr.Cast<int>().Min()}");
+				Console.WriteLine($"Max : {j_arr.Cast<int>().Max()}");
+
 				Console.WriteLine(delimeter);
 
 			}
@@ -212,7 +210,21 @@ namespace Arrays
 			}
 		}
 
-		public static void FillRand
+		public static void FillRand(int[][] arr)
+		{
+
+		}
+		public static void Print<T>(T[][] arr)
+		{
+			for (int i = 0; i < arr.GetLength(0); i++)
+			{
+				for (int j = 0; j < arr.GetLength(1); j++)
+				{
+					Console.Write($"{arr[i][j]}\t");
+                }
+                Console.WriteLine();
+            }
+		}
 
 		public static void Print<T>(T[] arr)
 		{
@@ -235,15 +247,25 @@ namespace Arrays
 			}
 		}
 
+		public static int Sum(int[][] arr)
+		{
+			int sum = 0;
+			foreach (int[] i in arr)
+			{
+				sum += i.Sum();
+			}
+			return sum;
+		}
 
-
-
-
-
-
-
-
-
+		public static int Count(int[][] arr)
+		{
+			int count = 0;
+			foreach (int[] i in arr)
+			{
+				count += i.Count();
+			}
+			return count;
+		}
 
 
 
